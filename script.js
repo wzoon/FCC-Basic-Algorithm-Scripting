@@ -20,7 +20,7 @@
   }
   
   console.log(confirmEnding("Open sesame", "pen"));
-    */
+  
    function repeatStringNumTimes(str, num) {
     // repeat after me
     let s='';
@@ -31,3 +31,10 @@
   }
   
   console.log(repeatStringNumTimes("abc", -1));
+  */
+ function truncateString(str, num) {
+    // Clear out that junk in your trunk
+    return num < str.length ? str.slice(0,num) + '...' : str;
+  }
+  
+  console.log(truncateString("Absolutely Longer", 2));
