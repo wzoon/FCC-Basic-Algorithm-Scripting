@@ -31,10 +31,18 @@
   }
   
   console.log(repeatStringNumTimes("abc", -1));
-  */
+  
  function truncateString(str, num) {
     // Clear out that junk in your trunk
     return num < str.length ? str.slice(0,num) + '...' : str;
   }
   
   console.log(truncateString("Absolutely Longer", 2));
+*/
+
+function findElement(arr, func) {
+    let num = 0;
+    return num = arr.find(func);
+  }
+  
+  console.log(findElement([1, 3, 5, 8, 9, 10], num => num % 2 === 0));
