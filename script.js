@@ -6,7 +6,7 @@
     }
     return a;
   }
-  */
+
   //console.log(largestOfFour([[4, 9, 1, 3], [13, 35, 18, 26], [32, 35, 97, 39], [1000000, 1001, 857, 1]]));
 
   function confirmEnding(str, target) {
@@ -19,4 +19,15 @@
     return s == target ? true : false;
   }
   
-  console.log(confirmEnding("Abstraction", "action"));
+  console.log(confirmEnding("Open sesame", "pen"));
+    */
+   function repeatStringNumTimes(str, num) {
+    // repeat after me
+    let s='';
+    for(let i = 0;i<num;i++){
+        s = s + str;
+    }
+    return num >= 0 ? s : '';
+  }
+  
+  console.log(repeatStringNumTimes("abc", -1));
