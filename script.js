@@ -8,3 +8,15 @@
   }
   */
   //console.log(largestOfFour([[4, 9, 1, 3], [13, 35, 18, 26], [32, 35, 97, 39], [1000000, 1001, 857, 1]]));
+
+  function confirmEnding(str, target) {
+    // "Never give up and good luck will find you."
+    // -- Falcor
+    let a = str.length;
+    let b = target.length;
+    let s = str.slice(a-b,a);
+
+    return s == target ? true : false;
+  }
+  
+  console.log(confirmEnding("Abstraction", "action"));
