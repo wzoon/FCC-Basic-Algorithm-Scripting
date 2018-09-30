@@ -47,10 +47,23 @@ function findElement(arr, func) {
   
   console.log(findElement([1, 3, 5, 8, 9, 10], num => num % 2 === 0));
 
-*/
+
 function booWho(bool) {
     // What is the new fad diet for ghost developers? The Boolean.
     return typeof(bool) === "boolean" ? true : false;
   }
   
  console.log(booWho(false));
+
+ */
+
+function titleCase(str) {
+    let s = str.toLowerCase().split(' ');
+    for(let i = 0;i<s.length;i++){
+       s[i] = s[i].charAt(0).toUpperCase() + s[i].substring(1);
+    }
+    str = s.join(' ');
+    return str;
+  }
+  
+  console.log(titleCase("I'm a little tea pot"));
