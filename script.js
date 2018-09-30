@@ -38,7 +38,7 @@
   }
   
   console.log(truncateString("Absolutely Longer", 2));
-*/
+
 
 function findElement(arr, func) {
     let num = 0;
@@ -46,3 +46,11 @@ function findElement(arr, func) {
   }
   
   console.log(findElement([1, 3, 5, 8, 9, 10], num => num % 2 === 0));
+
+*/
+function booWho(bool) {
+    // What is the new fad diet for ghost developers? The Boolean.
+    return typeof(bool) === "boolean" ? true : false;
+  }
+  
+ console.log(booWho(false));
