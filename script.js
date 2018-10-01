@@ -77,7 +77,7 @@ function titleCase(str) {
   }
   
   console.log(frankenSplice([1, 2, 3], [4, 5, 6], 1));
- */
+
 function bouncer(arr) {
   // Don't show a false ID to this bouncer.
   let narr = [];
@@ -90,3 +90,17 @@ function bouncer(arr) {
 }
 
 console.log(bouncer([1, null, NaN, 2, undefined]));
+ */
+function getIndexToIns(arr, num) {
+  // Find my place in this sorted array.
+  arr.sort();
+  let index = 0;
+  for(let i=0;i<=arr.length;i++){
+    if(num > arr[i]){
+      index++;
+    }
+  }
+  return index;
+}
+
+console.log(getIndexToIns([3, 10, 5], 3));
