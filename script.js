@@ -68,7 +68,7 @@ function titleCase(str) {
   
   console.log(titleCase("I'm a little tea pot"));
 
-   */
+  
   function frankenSplice(arr1, arr2, n) {
     // It's alive. It's alive!
     let narr = [...arr2];
@@ -77,3 +77,16 @@ function titleCase(str) {
   }
   
   console.log(frankenSplice([1, 2, 3], [4, 5, 6], 1));
+ */
+function bouncer(arr) {
+  // Don't show a false ID to this bouncer.
+  let narr = [];
+  for(let i=0;i<arr.length;i++){
+    if(arr[i]){
+      narr.push(arr[i]);
+    }
+  }
+  return narr;
+}
+
+console.log(bouncer([1, null, NaN, 2, undefined]));
