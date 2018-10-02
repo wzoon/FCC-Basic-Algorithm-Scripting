@@ -90,7 +90,7 @@ function bouncer(arr) {
 }
 
 console.log(bouncer([1, null, NaN, 2, undefined]));
- */
+
 function getIndexToIns(arr, num) {
   // Find my place in this sorted array.
   arr.sort();
@@ -104,3 +104,15 @@ function getIndexToIns(arr, num) {
 }
 
 console.log(getIndexToIns([3, 10, 5], 3));
+ */
+function mutation(arr) {
+  var test = arr[1].toLowerCase();
+  var target = arr[0].toLowerCase();
+  for (var i=0;i<test.length;i++) {
+    if (target.indexOf(test[i]) < 0)
+      return false;
+  }
+  return true;
+}
+
+console.log(mutation(["hello", "he"]));
