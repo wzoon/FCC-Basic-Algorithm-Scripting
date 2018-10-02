@@ -104,7 +104,7 @@ function getIndexToIns(arr, num) {
 }
 
 console.log(getIndexToIns([3, 10, 5], 3));
- */
+
 function mutation(arr) {
   var test = arr[1].toLowerCase();
   var target = arr[0].toLowerCase();
@@ -116,3 +116,14 @@ function mutation(arr) {
 }
 
 console.log(mutation(["hello", "he"]));
+ */
+function chunkArrayInGroups(arr, size) {
+  // Break it up.
+  let narr = [];
+  for(let i=0;i<arr.length;i+=size){
+    narr.push(arr.slice(i,i+size));
+  }
+  return narr;
+}
+
+console.log(chunkArrayInGroups(["a", "b", "c", "d"], 2));
